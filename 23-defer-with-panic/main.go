@@ -11,6 +11,7 @@ func writeFile() {
 		panic(err)
 	}
 	defer file.Close()
+
 	fmt.Fprintln(file, "hello, world!")
 	fmt.Println("Arquivo escrito corretamente.")
 }
